@@ -1,0 +1,239 @@
+body::-webkit-scrollbar {
+    display: none; /* to hide the scrollbar*/
+  }
+
+  body{
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+
+  }
+  
+  .heading{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 30vh;
+  }
+  .heading button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-size: 1.2rem;
+    background: white;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .heading a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+  }
+  .heading button:hover{
+    border: 2px solid white;
+    background:transparent ;
+    color: white;
+  }
+
+
+  .hr{
+    margin-left: 6%;
+    width: 190vh;
+    height: 2px;
+    background-color: #cccbcb;
+  }
+
+
+.main-contact{
+    margin-top: 10vh;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+}
+
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+}
+.left h1{
+    font-size: 5rem;
+    background-clip: "";
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.left p{
+    font-size: 0.8rem;
+    color: black;
+}
+.right img{
+    border-radius: 100%;
+    height: 50vh;
+    width: 50vh;
+}
+
+.bottom{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    color: black;
+}
+
+.bottom form{
+    height: 100%;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.bottom label{
+    font-size: larger;
+}
+.bottom input {
+    height: 2rem;
+    width: 15rem;
+}
+.message{
+    height: 200px;
+    width: 500px;
+}
+.submit-button{
+    height: 5em;
+    width: 10em;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0998f1;
+    transition: 0.5s ease-in-out;
+}
+
+.submit-button:hover{
+    height: 5em;
+    width: 10em;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #0998f1;
+    background-color: white;
+}
+
+@media screen and (max-width:700px) {
+
+    .main-contact{
+        height: 50vh;
+        width: 40vh;
+        margin-top: 10vh;   
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 50%;
+    }
+    
+    
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 50%;
+    }
+    .left h1{
+        font-size: 0.8rem;
+        background-clip: "";
+        background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    .left p{
+        margin: 15px;
+        font-size: 0.6rem;
+        color: rgb(95, 94, 94);
+    }
+    .right img{
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bottom{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+    
+    .bottom form{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-self: center;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .bottom label{
+        font-size: 0.8rem;
+    }
+    .bottom input {
+        height: 2rem;
+        width: 15rem;
+    }
+    .message{
+        height: 10rem;
+        width: 20rem;
+    }
+    .submit-button{
+        margin-top: 2vh;
+        height: 2em;
+        width: 8em;
+        border-radius: 5px;
+        font-size: 2rem;
+        color: white;
+        background-color: #0998f1;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .submit-button:hover{
+        height: 4em;
+        width: 7em;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #0998f1;
+        background-color: white;
+    }
+    
+}

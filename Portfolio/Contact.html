@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Stylesheets/Contact.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Akshat Joshi</h1>
+        <a href="Home.html"><button>HOME</button></a>
+        </div>
+        <div class="hr"></div>
+    
+        <br/><br/>
+    <div class="main-contact">
+            
+        <div class="left">
+        <h1>Contact me</h1>
+        <p>You can ask whatever related to my field</p>
+        </div>
+
+        <div class="right">
+        <img src="images/ak.jpg" alt="Loading..." />
+        </div>
+        </div>
+        <div class="bottom">
+        <form>
+            <label htmlFor="Name">Name :</label>
+            <input type="text" id="name" name="name" required onChange="(e) => setName(e.target.value)" />
+            <label htmlFor="Email">Email :</label>
+            <input type="email" id="email" name="email" required/>
+            <label htmlFor="Message">Message :</label>
+            <textarea name="message" rows={8} required onChange="(e) => setMessage(e.target.value)"></textarea>
+        </form>
+        <button class='submit-button' onClick={handleSendEmail} >Submit</button>
+            </div>
+
+            <script src="Script/Home.js"></script>
+</body>
+</html>
